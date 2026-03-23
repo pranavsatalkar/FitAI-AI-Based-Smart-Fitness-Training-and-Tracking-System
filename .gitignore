@@ -1,0 +1,14 @@
+# Ignore cache / venv files
+
+# Virtual environment
+fitness_env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# VS Code settings
+.vscode/
+
+# System files
+.DS_Store
