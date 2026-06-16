@@ -12,3 +12,11 @@ __pycache__/
 
 # System files
 .DS_Store
+
+# Large media files
+videos/
+songs/
+music/songs/
+*.mp4
+*.mp3
+*.wav
