@@ -61,7 +61,17 @@ streamlit run app.py
 ```
 
 ## 📂 Project Structure
-
+FitAI/
+├── .streamlit/
+├── images/
+├── music/
+│   └── music.py
+├── settings/
+│   └── settings.py
+├── .gitignore
+├── README.md
+├── app.py
+└── requirements.txt
 
 
 ## 📌 Note
