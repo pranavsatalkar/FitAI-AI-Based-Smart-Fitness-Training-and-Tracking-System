@@ -46,7 +46,7 @@ your webcam. No gym equipment or wearables needed.
 
 ```bash
 # Clone the repo
-git clone https://github.com/pranavsatalkar/FitAI.git
+git clone https://github.com/pranavsatalkar/FitAI-AI-Based-Smart-Fitness-Training-and-Tracking-System.git
 cd FitAI
 
 # Create virtual environment
