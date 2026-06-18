@@ -20,3 +20,13 @@ music/songs/
 *.mp4
 *.mp3
 *.wav
+
+food_log.json
+rest_days.json
+session_log.json
+user_profile.json
+weight_log.json
+streak.json
+user_goals.json
+goals_vals.json
+custom_targets.json

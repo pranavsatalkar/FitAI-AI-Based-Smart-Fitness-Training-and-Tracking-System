@@ -1,185 +1,82 @@
-# Project explanation & how to run
+# 🏋️ FitAI — AI-Based Smart Fitness Training and Tracking System
 
-# 🛠️ Git & GitHub Commands (Step-by-Step)
+An AI-powered fitness trainer web app built with Python 
+and Streamlit that tracks your workouts in real-time 
+using your webcam.
 
----
+## 🎯 Project Overview
 
-## Step 1: Initialize Git Repository
+FitAI is a complete fitness companion that uses computer 
+vision to detect body pose, count reps automatically, 
+and deliver live AI-powered voice feedback — all from 
+your webcam. No gym equipment or wearables needed.
 
-```bash
-git init
-```
+## ✨ Features
 
-➡️ Creates a new Git repository in your project folder and starts tracking files.
+- **🎥 Live Rep Counter** — Real-time angle-based rep 
+  counting using MediaPipe pose detection
+- **🤖 AI Voice Feedback** — Personalized coaching via 
+  Groq (Llama 3.1) based on your fitness level & goal
+- **💪 8 Exercises Supported** — Bicep Curl, Pushups, 
+  Squats, Shoulder Press, Tricep Dips, Lunges, 
+  Lateral Raise, Plank
+- **📚 Exercise Library** — Video demos for Chest, 
+  Back & Legs with difficulty levels
+- **📊 Progress Tracking** — Workout history, streaks, 
+  rest days & session planning
+- **🥗 Nutrition Tracker** — Food log with calorie & 
+  macro tracking (Protein, Carbs, Fat)
+- **🎵 Workout Music** — Upload & play your own songs
+  while training
+- **👤 User Profiles** — Personalized onboarding 
+  with fitness goal & activity level
 
----
+## 🛠️ Tech Stack
 
-## Step 2: Configure Git (First Time Only)
+| Tool | Purpose |
+|------|---------|
+| Python | Core language |
+| Streamlit | Web framework |
+| MediaPipe | Pose detection (33 landmarks) |
+| OpenCV | Video & frame processing |
+| Groq API (Llama 3.1) | AI voice feedback |
+| pyttsx3 | Text-to-speech engine |
 
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your_email@example.com"
-```
-
-➡️ Sets your name and email for commits.
-
----
-
-## Step 3: Check File Status
-
-```bash
-git status
-```
-
-➡️ Shows which files are:
-
-* Untracked (new files)
-* Modified (changed files)
-* Staged (ready to commit)
-
----
-
-## Step 4: Add Files to Staging Area
-
-```bash
-git add .
-```
-
-➡️ Adds all files to staging (ready to be saved).
-
----
-
-## Step 5: Commit Changes
+## ⚙️ Installation
 
 ```bash
-git commit -m "Initial commit"
+# Clone the repo
+git clone https://github.com/pranavsatalkar/FitAI.git
+cd FitAI
+
+# Create virtual environment
+python -m venv fitness_env
+fitness_env\scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
 ```
 
-➡️ Saves a snapshot of your project with a message.
+## 📂 Project Structure
+
+
+
+## 📌 Note
+
+- Webcam required for live exercise tracking
+- Add your own Groq API key in `app.py` to enable 
+  AI voice feedback
+- Video demos require exercise videos in `videos/` 
+  folder (not included due to file size)
+
+## 🎓 About
+
+Built as a Final Year Project demonstrating the use 
+of Computer Vision and Generative AI in real-world 
+fitness applications.
 
 ---
-
-## Step 6: Create Repository on GitHub
-
-➡️ Go to GitHub and create a new repository.
-
----
-
-## Step 7: Connect Local Project to GitHub
-
-```bash
-git remote add origin YOUR_REPOSITORY_URL
-```
-
-➡️ Links your local project to GitHub repository.
-
----
-
-## Step 8: Set Main Branch
-
-```bash
-git branch -M main
-```
-
-➡️ Sets the default branch name to "main".
-
----
-
-## Step 9: Push Project to GitHub (First Time)
-
-```bash
-git push -u origin main
-```
-
-➡️ Uploads your project to GitHub for the first time.
-
----
-
-## Step 10: Make Changes in Code
-
-➡️ Edit or add new code in your project using VS Code.
-
----
-
-## Step 11: Check Changes Again
-
-```bash
-git status
-```
-
-➡️ Shows modified files after changes.
-
----
-
-## Step 12: Add Updated Files
-
-```bash
-git add .
-```
-
-➡️ Adds updated files to staging.
-
----
-
-## Step 13: Commit Updated Changes
-
-```bash
-git commit -m "Describe your changes"
-```
-
-➡️ Saves new changes.
-
----
-
-## Step 14: Push Updates to GitHub
-
-```bash
-git push
-```
-
-➡️ Uploads latest changes to GitHub.
-
----
-
-## Step 15: Ignore Unnecessary Files
-
-Create `.gitignore` file and add:
-
-```bash
-fitness_env/
-__pycache__/
-*.pyc
-```
-
-➡️ Prevents unnecessary files from being uploaded.
-
----
-
-## Step 16: Remove Already Tracked Files (if needed)
-
-```bash
-git rm -r --cached fitness_env
-```
-
-➡️ Stops tracking virtual environment files.
-
----
-
-## Step 17: Delete Git and Start Fresh (Optional)
-
-```bash
-Remove-Item -Recurse -Force .git   # PowerShell
-```
-
-➡️ Deletes Git history and resets repository.
-
----
-
-# 📌 Summary
-
-* Git tracks changes locally
-* GitHub stores code online
-* Changes require: add → commit → push
-* `.gitignore` prevents unwanted files
-
----
+Made with ❤️ | Python · Streamlit · MediaPipe · Groq AI
